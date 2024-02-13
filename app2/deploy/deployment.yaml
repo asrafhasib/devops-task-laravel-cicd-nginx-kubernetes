@@ -12,10 +12,10 @@ spec:
       labels:
         app: laravel-hello-2
     spec:
-      nodeName: demo-cluster-m03
+      nodeName: worker-node1
       containers:
         - name: laravel-hello-2
-          image: shawon10/laravel-hello-2:${BUILD_NUMBER}
+          image: asrafhasib/laravel-hello-2:${BUILD_NUMBER}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
